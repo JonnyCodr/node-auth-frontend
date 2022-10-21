@@ -7,12 +7,12 @@ const Menu = () => {
       <div className="position-sticky pt-3 sidebar-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
-            <Link to='/' className="nav-link active">
+            <Link to={'/'} className="nav-link">
               Dashboard
             </Link>
           </li>
           <li className="nav-item">
-            <Link to='/users' className="nav-link active">
+            <Link to='/users' className="nav-link">
               Users
             </Link>
           </li>
