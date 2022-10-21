@@ -16,12 +16,14 @@ const Register = () => {
   const submit = async (e: SyntheticEvent) => {
     e.preventDefault()
 
-    console.log({first_name: firstName, last_name: lastName, email, password, password_confirm: confirmPassword})
-    const resp = await axios.post('/register', {
-      first_name: firstName, last_name: lastName, email, password, password_confirm: confirmPassword
-    })
-
-    console.log(resp.data)
+    try {
+      console.log({first_name: firstName, last_name: lastName, email, password, password_confirm: confirmPassword})
+      const resp = await axios.post('/register', {
+        first_name: firstName, last_name: lastName, email, password, password_confirm: confirmPassword
+      })
+    } catch (e) {
+      console.log(e)
+    }
 
   }
 

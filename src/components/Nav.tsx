@@ -12,8 +12,7 @@ const Nav = () => {
     (
       async () => {
         const { data } = await axios.get('/user')
-        console.log(data)
-        setUser(new User(data.id, data.firstName, data.lastName, data.email))
+        setUser(new User(data.id, data.firstName, data.lastName, data.email, data.role))
       }
     )()
   }, [])
