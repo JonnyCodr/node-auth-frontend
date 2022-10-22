@@ -7,6 +7,9 @@ extends:
   - react-app/jest
   - plugin:react/recommended
   - xo
+  - xo-react
+  - xo-typescript
+  - plugin:prettier/recommended
 overrides:
   - extends:
       - xo-typescript
@@ -20,4 +23,6 @@ parserOptions:
       jsx: true
 plugins:
   - react
+  - @typescript-eslint
+  - prettier
 rules: {}
