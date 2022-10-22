@@ -21,6 +21,11 @@ const Menu = () => {
               Roles
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to='/products' className="nav-link">
+              Products
+            </Link>
+          </li>
         </ul>
 
         <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
