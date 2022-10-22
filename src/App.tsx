@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import UserCreate from "./pages/users/UserCreate";
+import UserEdit from "./pages/users/UserEdit";
 
 function App() {
   return (
@@ -12,9 +14,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path={'/'} element={<Dashboard />} />
-          <Route path={'/users'} element={<Users />} />
           <Route path={'/register'} element={<Register />} />
           <Route path={'/login'} element={<Login />} />
+          <Route path={'/users'} element={<Users />} />
+          <Route path={'/users/create'} element={<UserCreate />} />
+          <Route path={'/users/edit/:userId'} element={<UserEdit />} />
         </Routes>
 
       </BrowserRouter>
